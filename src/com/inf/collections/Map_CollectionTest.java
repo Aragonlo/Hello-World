@@ -20,7 +20,7 @@ public class Map_CollectionTest{
 	    myList.add("Fire");
 	    myList.add("Water");
 	    myList.add("Fire");
-	    System.out.println(myList);
+	    System.out.println("List: " + myList);
 	    
 	    //iterate the elements.
 	    Iterator<String> iterator = myList.iterator();
@@ -34,7 +34,7 @@ public class Map_CollectionTest{
 	    		myTreeMap.put(value, count);
 	    	}
 	    }
-	    System.out.println(myTreeMap);
+	    System.out.println("New Map: " + myTreeMap);
 	    
 	    //Easiest way to iterate a map.
 	    for (Map.Entry<String, Integer> keyValuePair : myTreeMap.entrySet()) {
