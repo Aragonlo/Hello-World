@@ -25,7 +25,7 @@ public class Map_CollectionTest{
 	    System.out.println(myList);
 	    
 	    //iterate the elements.
-	    Iterator<String> iterator = myList.iterator();
+	    Iterator<String> iterator = myList.iterator(); 
 	    while( iterator.hasNext()){
 	    	String value = iterator.next();
 	    	if(myTreeMap.get(value) == null){
