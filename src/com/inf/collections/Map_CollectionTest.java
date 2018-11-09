@@ -1,3 +1,5 @@
+/* Exercise 1 : Detect duplicated item on a list of elements */
+
 package com.inf.collections;
 
 import java.util.ArrayList;
@@ -20,10 +22,10 @@ public class Map_CollectionTest{
 	    myList.add("Fire");
 	    myList.add("Water");
 	    myList.add("Fire");
-	    System.out.println("List: " + myList);
+	    System.out.println(myList);
 	    
 	    //iterate the elements.
-	    Iterator<String> iterator = myList.iterator();
+	    Iterator<String> iterator = myList.iterator(); 
 	    while( iterator.hasNext()){
 	    	String value = iterator.next();
 	    	if(myTreeMap.get(value) == null){
@@ -34,7 +36,7 @@ public class Map_CollectionTest{
 	    		myTreeMap.put(value, count);
 	    	}
 	    }
-	    System.out.println("New Map: " + myTreeMap);
+	    System.out.println(myTreeMap);
 	    
 	    //Easiest way to iterate a map.
 	    for (Map.Entry<String, Integer> keyValuePair : myTreeMap.entrySet()) {
