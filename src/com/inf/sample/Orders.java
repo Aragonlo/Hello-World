@@ -43,8 +43,7 @@ public class Orders {
 		List<String> inputs = new ArrayList<String>();
 		inputs.add("ABCA");
 		inputs.add("BCABA");
-		inputs.add("ABC");
-		inputs.add("BCAZHWQZH");
+		inputs.add("KLABC");
 	
 		Orders orderProcessor = new Orders();
 		
