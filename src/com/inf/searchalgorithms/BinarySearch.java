@@ -40,15 +40,17 @@ public class BinarySearch {
 	
 	public static void main(String[] args) {
 		// Executing binary search.
-		int [] myArray = {45,12,85,32,89,39,69,44,42,1,6,8};
+		int [] myArray = {89,12,5,33,9,30,15,24,42,1,6,32,8};
 		
 		//Quick sort for arrays.
 		Arrays.sort(myArray);
+		System.out.println(Arrays.toString(myArray));
 		
 		//Implemented methods
 		BinarySearch bsearch = new BinarySearch();
-		int index = bsearch.runBinarySearchIteratively(myArray, 32, 0, 12);
+		int index = bsearch.runBinarySearchIteratively(myArray, 32, 0, myArray.length);
 		System.out.println(" Value found : " + myArray[index]+ " in index: " + index);
+		
 		int indexR = bsearch.binarySearchRecursively(myArray, 32, 0, 12);
 		System.out.println(" Value found : " + myArray[indexR]+ " in index: " + indexR);
 		
